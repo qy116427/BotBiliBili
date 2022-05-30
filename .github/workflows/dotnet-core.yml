@@ -13,8 +13,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.202
-    - name: 更新依赖
-      run: dotnet restore
     - name: 构建
       run: dotnet build
     - name: 更新构建文件
